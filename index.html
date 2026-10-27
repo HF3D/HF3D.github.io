@@ -16,8 +16,8 @@
   <nav class="wrap topbar__inner" aria-label="Main">
     <a class="topbar__name" href="#top">Hugo Flodin</a>
     <div class="topbar__links">
-      <a href="#work">Work</a>
-      <a href="#reels">Reels</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -40,10 +40,30 @@
     <img class="hero__portrait" src="images/hugo-portrait.jpg" alt="Portrait of Hugo Flodin" width="720" height="720">
   </section>
 
-  <!-- ========== WORK ========== -->
+  <!-- ========== PROJECTS ========== -->
+  <!-- Put each YouTube video ID in data-youtube-id (the part after "v=" in the URL). -->
+  <section id="projects" class="wrap section" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+    <figure class="reel reel--main">
+      <div class="video" data-youtube-id="HF4_l7SeuzE" data-title="Animation reel"></div>
+      <figcaption><span class="title">Animation Reel [Year]</span><span class="meta">[Running time]</span></figcaption>
+    </figure>
+    <div class="grid2">
+      <figure class="reel">
+        <div class="video" data-youtube-id="4GUuSjD5KAA" data-title="[Video title]"></div>
+        <figcaption><span class="title">[Video title]</span><span class="meta">[Year]</span></figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="video" data-youtube-id="3PU7Fr_jkww" data-title="[Video title]"></div>
+        <figcaption><span class="title">[Video title]</span><span class="meta">[Year]</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
   <!-- Replace images/work-01.jpg … work-06.jpg with your renders (4:3 works best). -->
-  <section id="work" class="wrap section" aria-labelledby="work-title">
-    <h2 id="work-title">Work</h2>
+  <section id="gallery" class="wrap section" aria-labelledby="gallery-title">
+    <h2 id="gallery-title">Gallery</h2>
     <div class="grid2">
       <figure class="work">
         <img src="images/work-01.jpg" alt="Temple environment render" loading="lazy">
@@ -68,26 +88,6 @@
       <figure class="work">
         <img src="images/work-06.jpg" alt="[Describe image]" loading="lazy">
         <figcaption><span class="title">[Project title]</span><span class="meta">[Year]</span></figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ========== REELS ========== -->
-  <!-- Put each YouTube video ID in data-youtube-id (the part after "v=" in the URL). -->
-  <section id="reels" class="wrap section" aria-labelledby="reels-title">
-    <h2 id="reels-title">Reels</h2>
-    <figure class="reel reel--main">
-      <div class="video" data-youtube-id="REPLACE_ME" data-title="Animation reel"></div>
-      <figcaption><span class="title">Animation Reel [Year]</span><span class="meta">[Running time]</span></figcaption>
-    </figure>
-    <div class="grid2">
-      <figure class="reel">
-        <div class="video" data-youtube-id="REPLACE_ME" data-title="[Video title]"></div>
-        <figcaption><span class="title">[Video title]</span><span class="meta">[Year]</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="video" data-youtube-id="REPLACE_ME" data-title="[Video title]"></div>
-        <figcaption><span class="title">[Video title]</span><span class="meta">[Year]</span></figcaption>
       </figure>
     </div>
   </section>
