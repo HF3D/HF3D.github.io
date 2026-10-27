@@ -11,25 +11,6 @@ const CONFIG = {
 };
 
 /* ======================================================================
-   YouTube embeds — reads data-youtube-id on each .video element
-   ====================================================================== */
-document.querySelectorAll('.video').forEach((el) => {
-  const id = (el.dataset.youtubeId || '').trim();
-  if (!id || id === 'REPLACE_ME') {
-    el.innerHTML = '<div class="video__placeholder">YouTube video — add its ID in index.html (data-youtube-id)</div>';
-    return;
-  }
-  const iframe = document.createElement('iframe');
-  iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?rel=0';
-  iframe.title = el.dataset.title || 'YouTube video';
-  iframe.loading = 'lazy';
-  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-  iframe.allowFullscreen = true;
-  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-  el.appendChild(iframe);
-});
-
-/* ======================================================================
    Footer year
    ====================================================================== */
 document.getElementById('year').textContent = new Date().getFullYear();
