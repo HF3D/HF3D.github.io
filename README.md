@@ -17,7 +17,7 @@ In `index.html`, search for `REPLACE_ME` and `[` to find every placeholder:
 - **Work images**: overwrite `images/work-01.jpg` … `work-06.jpg` (4:3 looks best), and update titles, years and `alt` text.
 - **About banner**: overwrite `images/about-banner.jpg` with a wide render (at least 2000px wide).
 - **Portrait**: `images/hugo-portrait.jpg` (square, any size above about 900px).
-- **YouTube**: put each video's ID in `data-youtube-id="…"`. That's the part after `v=` in the URL, for example `dQw4w9WgXcQ`.
+- **YouTube**: the videos are plain YouTube embeds (`<iframe src="https://www.youtube.com/embed/VIDEO_ID">`). To change one, replace the ID after `/embed/`, which is the part after `v=` or `youtu.be/` in the video's link.
 - **Social links**: replace `REPLACE_ME` in each profile URL.
 
 The current portrait and temple images were cut from screenshots, so swap in the originals for full sharpness.
