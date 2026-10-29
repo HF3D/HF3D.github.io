@@ -44,7 +44,7 @@ h2 { font-size: clamp(32px, 4vw, 48px); line-height: 1.15; }
 }
 .topbar a { color: var(--bg); }
 .topbar a:hover { color: var(--bg); text-decoration: underline; text-underline-offset: 4px; }
-.topbar__name { font-family: var(--display); font-weight: 700; font-size: 19px; }
+.topbar__name { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 19px; }
 .topbar__links { display: flex; flex-wrap: wrap; gap: 4px 28px; }
 .topbar__links a { font-size: 14px; font-weight: 600; padding: 8px 0; }
 
